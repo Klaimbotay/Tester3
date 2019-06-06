@@ -9,6 +9,12 @@ script:
   - make
   - ./tests/tests
 
+addons:
+  sonarcloud:
+    organization: "klaimbotay-github"
+    token:
+      secure: $SONAR_TOKEN
+
 after_success:
   - coveralls --root . -E ".*external.*" -E ".*tests.*"
 
