@@ -78,8 +78,8 @@ TEST(check, num3){
             field[i][j] = 0;
         }
     }
-    field[5][9] = 1;
-    for(i=0;i<4;i++) a[i].y = 5;
+    field[7][9] = 1;
+    for(i=0;i<4;i++) a[i].y = 7;
     a[0].x = 9;
     a[1].x = 8;
     a[2].x = 7;
