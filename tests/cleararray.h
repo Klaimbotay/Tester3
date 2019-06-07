@@ -15,13 +15,13 @@ TEST(cleararray, num0) {
         }
     }
     cleararray(field);
-    int z = 0;
+    int flag = 0;
     for (int i = 0; i < 20; i++) {
         for(int j = 0; j < 10; j++){
-            if(field[i][j]) z = 1;
+            if(field[i][j]) flag = 1;
         }
     }
-    if(z == 1)
+    if(flag == 1)
     {
         FAIL();
     }

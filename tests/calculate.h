@@ -7,7 +7,7 @@ extern "C" {
 #include "functions.h"
 }
 
-//Проверка на добавление очков к изначально нулевой сумме
+//Проверка на добавление очков к нулю
 TEST(calculate, num0){
     ASSERT_EQ(calculate(0, 8), 8);
     ASSERT_EQ(calculate(0, 2000000), 2000000);
